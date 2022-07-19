@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Work+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="signup">
+        <div class="signup__heading">
+            <h1>Sign up</h1>
+        </div>
+        <div class="signup__form">
+            <h2 class="signup__title">New user?</h2>
+            <div class="signup__descr">Use the form below to create your account.</div>
+            <form id="form" class="form" action="#" method="post">
+                <div class="form_input">
+                    <p>First Name</p>
+                    <input id="name" required placeholder="Alice" type="text" name="name">
+
+                    <p>Nationality</p>
+                    <select id="nationality" name="nationality">
+                        <option selected value="s1">American</option>
+                        <option value="s2">Italiano</option>
+                        <option value="s3">Hispano</option>
+                    </select>
+
+                    <p>Date of Birth</p>
+                    <div class="form_date">
+                        <select id="day" name="day">
+                            <option selected value="21">21</option>
+                        </select>
+                        <select id="month" name="month">
+                            <option selected value="December">December</option>
+                        </select>
+                        <select id="year" name="year">
+                            <option selected value="1995">1995</option>
+                        </select>
+                    </div>
+
+                    <p>Password</p>
+                    <input id="password" required type="password" name="password">
+
+                    <div class="form_link">Have an account? <a href="#">Login</a></div>
+                </div>
+
+                <div class="form_input">
+                    <p>Last Name</p>
+                    <input id="surname" required placeholder="Miller" type="text" name="surname">
+
+                    <p>E-mail</p>
+                    <input id="email" required placeholder="alice.miller@yahoo.com" type="email" name="email">
+
+                    <p>Gender</p>
+                    <div class="gender">
+                        <input id="male" required type="radio" name="gender">
+                        <label for="male">Male</label>
+                        <input id="female" required type="radio" name="gender">
+                        <label for="female">Female</label>
+                    </div>
+
+                    <p>Confirm Password</p>
+                    <input id="confirm" required type="password" name="confirm">
+
+                    <!-- <input type="submit" value="Complete Signup"> -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
