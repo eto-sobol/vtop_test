@@ -20,8 +20,8 @@
         <div class="signup__form">
             <h2 class="signup__title">New user?</h2>
             <div class="signup__descr">Use the form below to create your account.</div>
-            <form id="form" class="form" action="#" method="post">
-                <div class="form_input">
+            <form class="sign-form" id="form" action="#" method="post">
+                <div class="sign-form_input">
                     <p>First Name</p>
                     <input id="name" required placeholder="Alice" type="text" name="name">
 
@@ -33,25 +33,36 @@
                     </select>
 
                     <p>Date of Birth</p>
-                    <div class="form_date">
+                    <div class="sign-form_date">
                         <select id="day" name="day">
-                            <option selected value="21">21</option>
+                            <option selected value="">21</option>
                         </select>
                         <select id="month" name="month">
+                            <option value="December">January</option>
+                            <option value="December">February</option>
+                            <option value="December">March</option>
+                            <option value="December">April</option>
+                            <option value="December">May</option>
+                            <option value="December">June</option>
+                            <option value="December">July</option>
+                            <option value="December">August</option>
+                            <option value="December">September</option>
+                            <option value="December">October</option>
+                            <option value="December">November</option>
                             <option selected value="December">December</option>
                         </select>
                         <select id="year" name="year">
-                            <option selected value="1995">1995</option>
+                            <option selected value="">1995</option>
                         </select>
                     </div>
 
                     <p>Password</p>
                     <input id="password" required type="password" name="password">
 
-                    <div class="form_link">Have an account? <a href="#">Login</a></div>
+                    <div class="sign-form_link">Have an account? <a href="#tologin">Login</a></div>
                 </div>
 
-                <div class="form_input">
+                <div class="sign-form_input">
                     <p>Last Name</p>
                     <input id="surname" required placeholder="Miller" type="text" name="surname">
 
@@ -59,20 +70,50 @@
                     <input id="email" required placeholder="alice.miller@yahoo.com" type="email" name="email">
 
                     <p>Gender</p>
-                    <div class="gender">
-                        <input id="male" required type="radio" name="gender">
+                    <div class="sign-form_gender">
+                        <input id="male" class="sign-form_radio" required type="radio" name="gender" value="male">
                         <label for="male">Male</label>
-                        <input id="female" required type="radio" name="gender">
+                        <input id="female" class="sign-form_radio" required type="radio" name="gender" value="female">
                         <label for="female">Female</label>
                     </div>
 
                     <p>Confirm Password</p>
                     <input id="confirm" required type="password" name="confirm">
 
-                    <!-- <input type="submit" value="Complete Signup"> -->
+                    <button class="sign-form_submit">Complete Signup</button>
                 </div>
             </form>
+
+            <div class="signup__bcg">
+                <svg id="background">
+                    <circle cx="205.5" cy="205.5" r="191" stroke="#F9FAFF" stroke-width="29" />
+                    <mask id="path-2-inside-1_11171_19" fill="white">
+                        <path
+                            d="M318.86 371.181C326.603 372.909 334.365 368.031 335.228 360.145C336.821 345.596 335.949 330.848 332.615 316.526C328.193 297.529 319.552 279.771 307.334 264.567C295.116 249.363 279.633 237.103 262.033 228.696C244.433 220.289 225.166 215.95 205.661 216C186.156 216.051 166.913 220.491 149.356 228.989C131.8 237.488 116.382 249.828 104.243 265.096C92.104 280.363 83.5564 298.167 79.2333 317.187C75.9743 331.525 75.179 346.278 76.8473 360.818C77.7516 368.7 85.5388 373.537 93.2729 371.769V371.769C101.007 370.001 105.734 362.291 105.078 354.384C104.222 344.085 104.946 333.687 107.249 323.554C110.616 308.738 117.275 294.869 126.731 282.976C136.187 271.082 148.198 261.469 161.875 254.849C175.551 248.228 190.542 244.77 205.736 244.73C220.931 244.691 235.939 248.071 249.65 254.62C263.36 261.169 275.421 270.719 284.939 282.563C294.457 294.407 301.188 308.241 304.633 323.04C306.989 333.161 307.767 343.555 306.965 353.858C306.349 361.768 311.117 369.454 318.86 371.181V371.181Z" />
+                    </mask>
+                    <path
+                        d="M318.86 371.181C326.603 372.909 334.365 368.031 335.228 360.145C336.821 345.596 335.949 330.848 332.615 316.526C328.193 297.529 319.552 279.771 307.334 264.567C295.116 249.363 279.633 237.103 262.033 228.696C244.433 220.289 225.166 215.95 205.661 216C186.156 216.051 166.913 220.491 149.356 228.989C131.8 237.488 116.382 249.828 104.243 265.096C92.104 280.363 83.5564 298.167 79.2333 317.187C75.9743 331.525 75.179 346.278 76.8473 360.818C77.7516 368.7 85.5388 373.537 93.2729 371.769V371.769C101.007 370.001 105.734 362.291 105.078 354.384C104.222 344.085 104.946 333.687 107.249 323.554C110.616 308.738 117.275 294.869 126.731 282.976C136.187 271.082 148.198 261.469 161.875 254.849C175.551 248.228 190.542 244.77 205.736 244.73C220.931 244.691 235.939 248.071 249.65 254.62C263.36 261.169 275.421 270.719 284.939 282.563C294.457 294.407 301.188 308.241 304.633 323.04C306.989 333.161 307.767 343.555 306.965 353.858C306.349 361.768 311.117 369.454 318.86 371.181V371.181Z"
+                        stroke="#F9FAFF" stroke-width="58" mask="url(#path-2-inside-1_11171_19)" />
+                    <mask id="path-3-inside-2_11171_19" fill="white">
+                        <path
+                            d="M76 351C76 339 77 333.167 77.5 327C89 338.5 94 342 105 350.602V354.5C105 369.3 95 372.333 90 372C77.2 371.2 76.5 362.5 76 351Z" />
+                    </mask>
+                    <path
+                        d="M77.5 327L98.7132 305.787L52.8409 259.915L47.5981 324.576L77.5 327ZM76 351H46V351.652L46.0283 352.303L76 351ZM90 372L91.9956 342.066L91.9335 342.062L91.8713 342.058L90 372ZM105 350.602H135V335.977L123.48 326.969L105 350.602ZM47.5981 324.576C47.2467 328.91 46 337.385 46 351H106C106 340.615 106.753 337.424 107.402 329.424L47.5981 324.576ZM46.0283 352.303C46.2004 356.261 46.2969 368.307 51.5006 378.82C54.6902 385.265 59.7718 391.421 67.213 395.822C74.282 400.002 81.6924 401.539 88.1287 401.942L91.8713 342.058C91.9076 342.061 94.4305 342.211 97.7527 344.175C101.447 346.36 103.922 349.473 105.274 352.205C106.376 354.43 106.439 355.809 106.319 354.937C106.2 354.069 106.102 352.697 105.972 349.697L46.0283 352.303ZM88.0044 401.934C96.6807 402.512 108.365 400.363 118.416 392.108C129.639 382.89 135 369.26 135 354.5H75C75 354.819 74.952 353.643 75.8021 351.668C76.6937 349.595 78.2209 347.478 80.3342 345.742C84.1348 342.621 88.3193 341.821 91.9956 342.066L88.0044 401.934ZM135 354.5V350.602H75V354.5H135ZM123.48 326.969C112.285 318.215 108.719 315.793 98.7132 305.787L56.2868 348.213C69.2808 361.207 75.7151 365.785 86.5203 374.234L123.48 326.969Z"
+                        fill="white" mask="url(#path-3-inside-2_11171_19)" />
+                    <mask id="path-5-inside-3_11171_19" fill="white">
+                        <path
+                            d="M336 350C336 338 335 332.167 334.5 326C323 337.5 318 341 307 349.602V353.5C307 368.3 317 371.333 322 371C334.8 370.2 335.5 361.5 336 350Z" />
+                    </mask>
+                    <path
+                        d="M334.5 326L313.287 304.787L359.159 258.915L364.402 323.576L334.5 326ZM336 350H366V350.652L365.972 351.303L336 350ZM322 371L320.004 341.066L320.067 341.062L320.129 341.058L322 371ZM307 349.602H277V334.977L288.52 325.969L307 349.602ZM364.402 323.576C364.753 327.91 366 336.385 366 350H306C306 339.615 305.247 336.424 304.598 328.424L364.402 323.576ZM365.972 351.303C365.8 355.261 365.703 367.307 360.499 377.82C357.31 384.265 352.228 390.421 344.787 394.822C337.718 399.002 330.308 400.539 323.871 400.942L320.129 341.058C320.092 341.061 317.569 341.211 314.247 343.175C310.553 345.36 308.078 348.473 306.726 351.205C305.624 353.43 305.561 354.809 305.681 353.937C305.8 353.069 305.898 351.697 306.028 348.697L365.972 351.303ZM323.996 400.934C315.319 401.512 303.635 399.363 293.584 391.108C282.361 381.89 277 368.26 277 353.5H337C337 353.819 337.048 352.643 336.198 350.668C335.306 348.595 333.779 346.478 331.666 344.742C327.865 341.621 323.681 340.821 320.004 341.066L323.996 400.934ZM277 353.5V349.602H337V353.5H277ZM288.52 325.969C299.715 317.215 303.281 314.793 313.287 304.787L355.713 347.213C342.719 360.207 336.285 364.785 325.48 373.234L288.52 325.969Z"
+                        fill="white" mask="url(#path-5-inside-3_11171_19)" />
+                    <circle cx="204.5" cy="142.5" r="43.5" stroke="#F9FAFF" stroke-width="28" />
+                </svg>
+            </div>
+
         </div>
+
     </div>
 
     <script src="js/script.js"></script>

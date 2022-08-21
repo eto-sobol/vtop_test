@@ -1,9 +1,31 @@
-form
+.sign-form
     display: flex
     justify-content: space-between
     margin-top: 18px
     &_input
-        max-width: 235px
+        max-width: 237px
+    #email
+        height: 25.31px
+    #nationality
+        width: 235px
+    #day
+        width: 56px
+    #month
+        width: 91px
+        margin: 0 7px 0 7px
+    #year
+        width: 68px
+    &_gender
+        display: flex
+        align-items: center
+        margin-top: 5.7px
+        padding-bottom: 4.28px
+    #male, #female
+        width: 12px
+        color: #5A61ED
+        height: 12px
+    #female
+        margin-left: 19px
     p
         font-family: 'PT Sans', sans-serif
         font-style: normal
@@ -15,9 +37,9 @@ form
         &:first-child
             margin-top: 0px
     input
-        width: 235px
-        height: 23px
-        font-family: 'Work Sans'
+        width: 237px
+        height: 26px
+        font-family: 'Work Sans', sans-serif
         font-weight: 400
         font-size: 14px
         line-height: 16px
@@ -27,28 +49,51 @@ form
         &::placeholder
             color: #111111
     select
-        height: 23px
-        font-family: 'Work Sans'
+        height: 26px
+        font-family: 'Work Sans', sans-serif
         font-weight: 400
         font-size: 14px
         line-height: 16px
         color: #111111
         border: none
         border-bottom: 0.7px solid #F2F2F2
-    #nationality
-        width: 235px
-    #day
-        width: 56px
-    #month
-        width: 91px
-        margin: 0 9.8px 0 9.8px
-    #year
-        width: 68px
-    #male, #female
-        width: 12px
     label
-        font-family: 'Work Sans'
+        margin-left: 6px
+        font-family: 'Work Sans', sans-serif
         font-weight: 400
         font-size: 14px
         line-height: 16px
         color: #111111
+    &_link
+        display: block
+        margin-top: 104px
+        font-family: 'Work Sans', sans-serif
+        font-style: normal
+        font-weight: 400
+        font-size: 13px
+        line-height: 17px
+        color: #000000
+        a
+            font-weight: 700
+            color: #5A61ED
+            transition: 0.3s
+            &:hover
+                color: #FFFFFF
+    &_submit
+        margin-top: 98px
+        font-family: 'PT Sans', sans-serif
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 18px
+        color: #FFFFFF
+        background: #5A61ED
+        height: 32px
+        width: 154px
+        border: none
+        margin-left: 82px
+        transition: 0.3s
+        cursor: pointer
+        &:hover
+            color: #5A61ED
+            background: #FFFFFF
